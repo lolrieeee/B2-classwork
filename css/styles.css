@@ -1,0 +1,13 @@
+.container, .container-fluid {
+    border:solid 1px black;
+    margin-bottom:20px;
+}
+
+.row {
+    border: solid 1px pink;
+}
+
+[class^="col-"] {
+    border:solid 1px green;
+    background:rgba(0,0,0,.1);
+}
