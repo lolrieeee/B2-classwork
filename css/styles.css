@@ -1,13 +1,49 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .container, .container-fluid {
     border:solid 1px black;
     margin-bottom:20px;
-}
-
-.row {
-    border: solid 1px pink;
+    background:#efefef;
 }
 
 [class^="col-"] {
     border:solid 1px green;
-    background:rgba(0,0,0,.1);
+}
+
+.my-class-shared {
+    padding-top:20px;
+    padding-bottom:20px;
+    background: pink;
+}
+
+/* bootstrap sm size */
+@media screen and (min-width:768px) {
+
+}
+
+/* bootstrap md size */
+@media screen and (min-width:992px) {
+
+}
+
+/* bootstrap lg size */
+@media screen and (min-width:1200px) {
+    .my-class-shared {
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+
+    .my-class-1 {
+        background:red;
+    }
+
+    .my-class-2 {
+        background:orange;
+    }
+
+    .my-class-3 {
+        background:yellow;
+    }
 }

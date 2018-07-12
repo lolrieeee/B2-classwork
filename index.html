@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>Bootcamp 2 Bootstrap Basics</title>
+    <!-- Google Fonts Here -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Link CSS Files Here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+    <!-- Exercise 1 -->
     <div class="container">
         <div class="row">
+            <div class="col-sm-12">This is a basic Container, Row, Column Setup</div>
             <div class="col-sm-6 col-md-3 col-lg-4">Column 1</div>
             <div class="col-sm-6 col-md-3 col-lg-4">Column 2</div>
             <div class="col-sm-6 col-md-3 col-lg-4">Column 3</div>
@@ -24,11 +29,13 @@
             <div class="col-sm-6 col-md-3 col-lg-4">Column 10</div>
             <div class="col-sm-6 col-md-3 col-lg-4">Column 11</div>
             <div class="col-sm-6 col-md-3 col-lg-4">Column 12</div>
-        </div>
-    </div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container-fluid -->
 
+    <!-- Exercise 2 -->
     <div class="container-fluid">
         <div class="row">
+            <div class="col-sm-12">This is a basic Container-fluid, Row, Column Setup</div>
             <div class="col-sm-6 col-md-3 col-lg-4">Column 1</div>
             <div class="col-sm-6 col-md-3 col-lg-4">Column 2</div>
             <div class="col-sm-6 col-md-3 col-lg-4">Column 3</div>
@@ -41,9 +48,105 @@
             <div class="col-sm-6 col-md-3 col-lg-4">Column 10</div>
             <div class="col-sm-6 col-md-3 col-lg-4">Column 11</div>
             <div class="col-sm-6 col-md-3 col-lg-4">Column 12</div>
-        </div>
-    </div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container-fluid -->
 
+    <!-- Exercise 3 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">This section uses column offsets and resets</div>
+            <div class="col-sm-4">Column 1</div>
+            <div class="col-sm-7 col-sm-offset-1 col-md-8 col-md-offset-0 col-lg-6 col-lg-offset-2">Column 2</div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container-fluid -->
+
+    <!-- Exercise 4 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">This section uses column push and pulls</div>
+            <div class="col-sm-3 col-md-push-9 col-lg-push-3">Column 1</div>
+            <div class="col-sm-6 col-lg-push-3">Column 2</div>
+            <div class="col-sm-3 col-md-pull-9 ">Column 3</div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container-fluid -->
+
+    <!-- Exercise 5 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">This section uses nested columns</div>
+            <div class="col-sm-4">Column 1</div>
+            <div class="col-sm-8">
+                <!-- Nested Column Start -->
+                <div class="row">
+                    <div class="col-sm-6">Nested Column 1</div>
+                    <div class="col-sm-6">Nested Column 2</div>
+                    <div class="col-sm-6">Nested Column 3</div>
+                    <div class="col-sm-6">Nested Column 4</div>
+                    <div class="col-sm-6">Nested Column 5</div>
+                    <div class="col-sm-6">Nested Column 6</div>
+                </div> <!-- /.row -->
+                <!-- Nest Column End -->
+            </div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container-fluid -->
+
+    <!-- Exercise 6 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">This section uses clearfix and responsive classes to fix uneven coloumns</div>
+            <div class="col-sm-6 col-md-4">
+                Column 1
+                <p>This column is longer than the other columns and will need to be clear fixed to keep the columns neatly organized.</p>
+            </div>
+            <div class="col-sm-6 col-md-4">Column 2</div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-sm-6 col-md-4">Column 3</div>
+            <div class="clearfix visible-md-block visible-lg-block"></div>
+            <div class="col-sm-6 col-md-4">Column 4</div>
+            <div class="col-sm-6 col-md-4">Column 5</div>
+            <div class="col-sm-6 col-md-4">Column 6</div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+    <!-- Exercise 7 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">This section uses some predefined css styling classes provided by bootstrap</div>
+            <div class="col-sm-12 text-center">
+                <h1>Header Text</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="h1">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias officiis quos temporibus ut expedita consectetur, qui nam rem nulla laborum, non, quas, eos maiores. Dolore iure deserunt, commodi incidunt tempore.
+                </p>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="small">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="text-warning">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sunt, distinctio numquam doloribus fuga pariatur ipsum! Ipsum animi, voluptatem, maiores suscipit nisi voluptatibus! Aliquam, unde inventore deserunt, quisquam beatae ut.
+                </p>
+                <p class="bg-primary">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nobis perspiciatis explicabo nemo molestiae minima unde recusandae! Dolore sed eligendi totam minus aspernatur neque itaque necessitatibus, earum repellat quaerat amet?
+                </p>
+            </div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+    <!-- Exercise 8 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">This section shows how to create your own styles over bootstrap's without damaging their files</div>
+            <div class="col-md-4 my-class-shared my-class-1">Column 1</div>
+            <div class="col-md-4 my-class-shared my-class-2">Column 2</div>
+            <div class="col-md-4 my-class-shared my-class-3">Column 3</div>
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+    <!-- Link JS Scripts Here -->
     <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
 </body>
