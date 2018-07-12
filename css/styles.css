@@ -18,6 +18,10 @@ body {
     background: pink;
 }
 
+.example-background {
+    background: #efefef;
+}
+
 /* bootstrap sm size */
 @media screen and (min-width:768px) {
 
